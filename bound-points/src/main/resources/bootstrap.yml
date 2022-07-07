@@ -1,0 +1,19 @@
+spring:
+#  profiles:
+#    active: ${RUNPROFILE}
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  gson:
+    date-format: yyyy-MM-dd HH:mm:ss
+seata:
+  enable: true
+  tx-service-group: default_tx_group
+  registry:
+    type: nacos
+    nacos:
+      server-addr: http://127.0.0.1:8848
+  service:
+    disable-global-transaction: false
+    vgroupMapping:
+      default_tx_group: default
