@@ -15,7 +15,9 @@
 
 ## 二、seata说明
 #### 2.1、seata客户端[seata1.5.1](doc/seata1.5.1.7z)
-#### 2.2、seata-server中数据库驱动我使用的是8.0以上版本如果需要更换5.0,可以在target文件夹里替换，
+#### 2.2、注意seata启动配置conf/application.yml
+##### 2.2.1、两处nacos的地址 server-addr: http://127.0.0.1:8848
+#### 2.3、seata-server中数据库驱动我使用的是8.0以上版本如果需要更换5.0,可以在target文件夹里替换，
           \seata1.5.1\target\mysql5版本文件替换\seata-server.jar -> \seata1.5.1\target\seata-server.jar
 ## 三、seata nacos客户端下载地址
 #### 3.1、[百度云网盘](链接：https://pan.baidu.com/s/1EDE-40rBRsgt2bPkAhTA6A?pwd=ok6x 提取码：ok6x)
