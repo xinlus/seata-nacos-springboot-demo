@@ -5,7 +5,7 @@ COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY ${DEPENDENCY}/META-INF /app/META-INF
 COPY ${DEPENDENCY}/BOOT-INF/classes /app
 RUN rm -f /etc/localtime &&  ln -s ../usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-EXPOSE 6112/tcp
+EXPOSE 8081/tcp
 ENTRYPOINT ["java","-noverify","-XX:TieredStopAtLevel=1","-XX:+UnlockExperimentalVMOptions","-XX:+UseCGroupMemoryLimitForHeap",\
 "-DRUNDISCOVERY_ADDR=${NACOS_HOSTNAME}:${NACOS_PORT}",\
 "-DRUNENV=${ENV}",\
