@@ -11,6 +11,7 @@ spring:
   cloud:
     nacos:
       discovery:
+#        server-addr: ${NACOS_HOSTNAME}:${NACOS_PORT}
         server-addr: localhost:8848
     gateway:
       discovery:

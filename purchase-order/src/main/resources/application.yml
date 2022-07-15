@@ -12,6 +12,7 @@ spring:
   cloud:
     nacos:
       discovery:
+#        server-addr: ${NACOS_HOSTNAME}:${NACOS_PORT}
         server-addr: localhost:8848
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -91,6 +92,6 @@ ribbon:
   ConnectTimeout: 60000
 logging:
   level:
-    com.ghcare.feign.SmsFeign: debug
+    com.xinlus.feign.SmsFeign: debug
 swagger:
   enable: true
